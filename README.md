@@ -58,7 +58,8 @@ Let's show the distributions of magnetic values on $z = 0 \ km$:
   <em>Image 5: Distributions and normalizations of Bz</em>
 </p>
 
-Unfortunately both normalizations give dissapointing results from reconstruction, `arcsinh` 1% better than the standard norm.
+Unfortunately both normalizations give dissapointing results from reconstruction, `arcsinh` 1% better than the standard norm. 
+> As expected, the reconstrucion does well on some small points where magnetic field has strong influence.
 
 <p align="center">
   <img src="testing-B-normalizations/reconstruction_norm_norm.png" width="800">
