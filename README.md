@@ -38,7 +38,7 @@ Notebooks are named **`cnn-iso-z-{type of patch creation}-{physical parms. used 
 
 ### Normalization testing
 
-Here we test how the normalization of magnetic field influences the training and prediction on neural network for only magnetic inputs. We test z-score or standard normalization $(B - B_{mean})/\sigma$ against `arcsinh` or $arcsinh(B / \sigma)$. 
+Here we test how the normalization of magnetic field influences the training and prediction on neural network for only magnetic inputs. We test z-score $(B - B_{mean})/\sigma$ against `arcsinh` or $arcsinh(B / \sigma)$. 
 
 Let's show the distributions of magnetic values on $z = 0 \ km$:
 
@@ -58,11 +58,11 @@ Let's show the distributions of magnetic values on $z = 0 \ km$:
   <em>Image 5: Distributions and normalizations of Bz</em>
 </p>
 
-Unfortunately both normalizations give dissapointing results from reconstruction, `arcsinh` 1% better than the standard norm. 
+Unfortunately both normalizations give dissapointing results from reconstruction, `arcsinh` 1% better than the z-score norm. 
 > As expected, the reconstrucion does well on some small points where magnetic field has strong influence.
 
 <p align="center">
   <img src="testing-B-normalizations/reconstruction_norm_norm.png" width="800">
   <br>
-  <em>Image 6: Reconstruction using standard normalization</em>
+  <em>Image 6: Reconstruction using z-score normalization</em>
 </p>
