@@ -38,7 +38,7 @@ Notebooks are named **`cnn-iso-z-{patch creation type}-{physical parameters used
 
 ### Normalization testing
 
-Here we test how the normalization of the magnetic field influences training and prediction when the network is given magnetic inputs only. We compare the z-score $(B - B_{\mathrm{mean}})/\sigma$ with $\operatorname{arcsinh}(B / \sigma)$.
+Here we test how the normalization of the magnetic field influences training and prediction when the network is given magnetic inputs only. We compare the z-score $(B - B_{\mathrm{mean}})/\sigma$ with $\mathrm{arcsinh}(B / \sigma)$.
 
 First, the distributions of the magnetic field values at $z = 0$ km:
 
